@@ -1,4 +1,4 @@
-# Uniswap Interface
+# Uniswap Interface for Ethereum POW
 
 [![Tests](https://github.com/Uniswap/uniswap-interface/workflows/Tests/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions?query=workflow%3ATests)
 [![Styled With Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
@@ -16,6 +16,7 @@ An open source interface for Uniswap -- a protocol for decentralized exchange of
 
 ## Fix Chain Id for Ethereum Pow
 
+```bash
 Fix node_modules/@uniswap/sdk/dist/constants.d.ts, L4: 1-> 10001
 Fix node_modules/@uniswap/sdk/dist/sdk.cjs.development.js, L23: 1-> 10001
 Fix node_modules/@uniswap/sdk/dist/sdk.cjs.development.js.map, L1: MAINNET = 1 -> MAINNET = 10001
@@ -26,6 +27,7 @@ Fix node_modules/@uniswap/sdk/dist/entities/token.d.ts, L28: 1 -> 10001
 
 Fix node_modules/@uniswap/sdk/dist/sdk.esm.js, L19: 1 -> 10001
 Fix node_modules/@uniswap/sdk/dist/sdk.esm.js.map, L1: MAINNET = 1 -> MAINNET = 10001
+```
 
 
 ## Accessing the Uniswap Interface
