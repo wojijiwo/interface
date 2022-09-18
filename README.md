@@ -14,6 +14,20 @@ An open source interface for Uniswap -- a protocol for decentralized exchange of
 - Discord: [Uniswap](https://discord.gg/Y7TF6QA)
 - Whitepaper: [Link](https://hackmd.io/C-DvwDSfSxuh-Gd4WKE_ig)
 
+## Fix Chain Id for Ethereum Pow
+
+Fix node_modules/@uniswap/sdk/dist/constants.d.ts, L4: 1-> 10001
+Fix node_modules/@uniswap/sdk/dist/sdk.cjs.development.js, L23: 1-> 10001
+Fix node_modules/@uniswap/sdk/dist/sdk.cjs.development.js.map, L1: MAINNET = 1 -> MAINNET = 10001
+Fix node_modules/@uniswap/sdk/dist/sdk.cjs.production.js, L1: MAINNET = 1 -> MAINNET = 10001
+Fix node_modules/@uniswap/sdk/dist/sdk.cjs.production.js.map, L1: MAINNET = 1 -> MAINNET = 10001
+
+Fix node_modules/@uniswap/sdk/dist/entities/token.d.ts, L28: 1 -> 10001
+
+Fix node_modules/@uniswap/sdk/dist/sdk.esm.js, L19: 1 -> 10001
+Fix node_modules/@uniswap/sdk/dist/sdk.esm.js.map, L1: MAINNET = 1 -> MAINNET = 10001
+
+
 ## Accessing the Uniswap Interface
 
 To access the Uniswap Interface, use an IPFS gateway link from the
